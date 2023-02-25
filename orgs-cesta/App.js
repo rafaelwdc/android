@@ -7,6 +7,7 @@ import {
 } from '@expo-google-fonts/montserrat';
 
 import Cesta from './src/telas/Cesta';
+import mock from './src/mocks/cestas'
 
 export default function App() {
 
@@ -22,7 +23,7 @@ export default function App() {
   return (
     <SafeAreaView>
       <StatusBar />
-      <Cesta />
+      <Cesta {...mock} />
     </SafeAreaView>
   );
 }
