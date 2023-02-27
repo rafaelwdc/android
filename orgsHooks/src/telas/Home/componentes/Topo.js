@@ -11,16 +11,16 @@ class Topo extends React.Component {
             boasVindas: '',
             legenda: '',
         }
-    };
+    }
 
     atualizaTopo() {
         const retorno = carregaTopo();
         this.setState({ topo: retorno });
-    };
+    }
 
     componentDidMount() {
         this.atualizaTopo();
-    };
+    }
 
     render() {
         return <View style={estilos.topo}>
@@ -34,19 +34,21 @@ class Topo extends React.Component {
 const estilos = StyleSheet.create({
     topo: {
         backgroundColor: "#F6F6F6",
-        padding: 16,
+        padding: 16
     },
     imagem: {
-        width: 70,
-        height: 28
+        height: 28,
+        width: 70
     },
     boasVindas: {
-        marginTop: 24,
+        color: "#464646",
         fontSize: 26,
+        marginTop: 24,
         lineHeight: 42,
         fontWeight: "bold"
     },
     legenda: {
+        color: "#A3A3A3",
         fontSize: 16,
         lineHeight: 26
     }
