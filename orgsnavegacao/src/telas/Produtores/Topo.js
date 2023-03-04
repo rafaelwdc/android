@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
+import useTextos from '../../hooks/useTextos';
 
-import logo from '../../../assets/logo.png';
-import useTextos from '../../../hooks/useTextos';
+import logo from './logo.png';
 
 export default function Topo({ melhoresProdutores }) {
   const { boasVindas, legenda, legendaMelhoresProdutores } = useTextos();
